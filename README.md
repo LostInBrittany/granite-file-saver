@@ -1,6 +1,6 @@
-# granite-alert
+# granite-file-saver
 
-> A lightweight element to read a file from the filesystem
+> A lightweight element to save content to a file on the local filesystem
 > 
 > Polymer 1.5 ready
 
@@ -10,10 +10,10 @@
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install LostInBrittany/granite-alert --save
+$ bower install LostInBrittany/granite-file-saver --save
 ```
 
-Or [download as ZIP](https://github.com/LostInBrittany/granite-alert/archive/gh-pages.zip).## Usage
+Or [download as ZIP](https://github.com/LostInBrittany/granite-file-saver/archive/gh-pages.zip).## Usage
 
 1. Import Web Components' polyfill (if needed):
 
@@ -24,15 +24,15 @@ Or [download as ZIP](https://github.com/LostInBrittany/granite-alert/archive/gh-
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/granite-alert/granite-alert.html">
+    <link rel="import" href="bower_components/granite-file-saver/granite-file-saver.html">
     ```
 
 3. Start using it!
 
     ```html
-    <granite-file-reader read-as="dataURL" accept=".txt,.html,.css,.sh">
-        <div class="clickHere">Click here to load a file</div>
-    </granite-file-reader>
+    <granite-file-saver content="A new file will be created with this content">
+    <div class="clickHere">Click here to save a file</div>
+    </granite-file-saver>
     ```
 
 
