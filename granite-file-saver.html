@@ -42,7 +42,7 @@ Typical usage:
       </style>
 
       <content on-tap="_onTap"></content>
-      <a id="hiddenSaver" href$="[[_file]]" download="warpscript.mc2" hidden></a>
+      <a id="hiddenSaver" href$="[[_file]]" download="{{_filename}}" hidden></a>
     </template>
 
 
@@ -84,13 +84,24 @@ Typical usage:
             value: "plain/text"
           },
 
+          filename: {
+            type: String,
+            value: ""
+          },
+
           /**
            * Internal file bbject
            */
           _file: {
             type: Object,
             value: null
+          },
+
+          _filename: {
+            type: String,
+            value: "warpscript.mc2"
           }
+
         },
 
         observers: [
@@ -105,7 +116,13 @@ Typical usage:
             content = [ this.text ];
           } else {
             content = this.payload;
-          }          
+          }       
+          if (this.filename) {
+            this._filename = this.filename;
+          } else {
+            this._filename=  "file-"+Date.now().toString();
+          }
+           
           // console.debug("[granite-file-reader]", content);
           var data = new Blob(content, {type: this.mimeType});
 
