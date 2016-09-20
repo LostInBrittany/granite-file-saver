@@ -103,9 +103,10 @@ Typical usage:
           var content;
           if (this.text) {
             content = [ this.text ];
-          }
-          content = this.payload;
-
+          } else {
+            content = this.payload;
+          }          
+          // console.debug("[granite-file-reader]", content);
           var data = new Blob(content, {type: this.mimeType});
 
           // If we are replacing a previously generated file we need to
