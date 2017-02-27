@@ -8,6 +8,26 @@
 
 [https://lostinbrittany.github.io/granite-file-saver](https://lostinbrittany.github.io/granite-file-saver)
 
+
+## Usage example
+
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="granite-alert.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<granite-file-saver text="A new file will be created with this content">
+    <div class="clickHere">Click here to save a file</div>
+</granite-file-saver>
+```
+
 ## Install
 
 Install the component using [Bower](http://bower.io/):
@@ -33,8 +53,8 @@ Or [download as ZIP](https://github.com/LostInBrittany/granite-file-saver/archiv
 3. Start using it!
 
     ```html
-    <granite-file-saver content="A new file will be created with this content">
-    <div class="clickHere">Click here to save a file</div>
+    <granite-file-saver text="A new file will be created with this content">
+        <div class="clickHere">Click here to save a file</div>
     </granite-file-saver>
     ```
 
