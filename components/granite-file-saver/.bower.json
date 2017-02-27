@@ -1,0 +1,38 @@
+{
+  "name": "granite-file-saver",
+  "authors": [
+    "Horacio Gonzalez <horacio.gonzalez@gmail.com>"
+  ],
+  "description": "A lightweight element to save content to a file on the local filesystem",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "lostinbrittany",
+    "file-saver"
+  ],
+  "main": "granite-file-saver.html",
+  "license": "MIT",
+  "homepage": "https://github.com/LostInBrittany/granite-file-saver",
+  "ignore": [],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.8.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.1.6",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.2.3",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.4",
+    "test-fixture": "PolymerElements/test-fixture#^1.1.1",
+    "web-component-tester": "^4.3.0"
+  },
+  "_release": "574c760435",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "574c760435bb2fa6f7a8c64ec3d451dd56e85374"
+  },
+  "_source": "https://github.com/LostInBrittany/granite-file-saver.git",
+  "_target": "master",
+  "_originalSource": "LostInBrittany/granite-file-saver",
+  "_direct": true
+}
