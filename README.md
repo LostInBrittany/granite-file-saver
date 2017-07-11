@@ -2,7 +2,7 @@
 
 > A lightweight element to save content to a file on the local filesystem
 > 
-> Polymer 1.5 ready
+> Hybrid Polymer element, 1.x-2.x ready
 
 ## Doc & demo
 
