@@ -41,7 +41,7 @@ Typical usage:
         }
       </style>
 
-      <slot on-tap="_onTap"></slot>
+      <slot></slot>
       <a id="hiddenSaver" href$="[[_file]]" download="{{_filename}}" hidden></a>
     </template>
 
@@ -103,11 +103,11 @@ Typical usage:
           }
 
         },
-
-        observers: [
-        ],
+        
         listeners: {
+          'tap': '_onTap',
         },
+        
         _onTap: function(evt) {
           evt.stopPropagation();
 
