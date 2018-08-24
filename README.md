@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/LostInBrittanygranite-file-saver)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/LostInBrittanygranite-file-saver.svg)](https://vaadin.com/directory/component/LostInBrittanygranite-file-saver)
+
 # granite-file-saver
 
 > A lightweight element to save content to a file on the local filesystem
