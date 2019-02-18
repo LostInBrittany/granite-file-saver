@@ -2,11 +2,8 @@
 <!--
 @license MIT
 Copyright (c) 2015 Horacio "LostInBrittany" Gonzalez
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 <html lang="en">
@@ -20,10 +17,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
     <script>
-
       // setup Polymer options
       window.Polymer = {lazyRegister: true, dom: 'shadow'};
-
       // load webcomponents polyfills
       (function() {
         if ('registerElement' in document
@@ -37,18 +32,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           document.head.appendChild(e);
         }
       })();
-
-
     </script>
-    <link   rel="import" href="../../polymer/polymer.html">
-
-
-    <link rel="import" href="../../paper-styles/color.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-icons/iron-icons.html">
-    
-    <link rel="import" href="../../granite-file-saver/granite-file-saver.html">
+   <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+   
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+      import '@polymer/iron-icons/iron-icons';
+      import '@polymer/paper-styles/color';
+    </script>
+    <script type="module" src="../granite-file-saver.js"></script>
 
     <style is="custom-style" include="demo-pages-shared-styles">
       .spacer-10 { width:100%; height:10px; }
@@ -79,4 +72,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </div>
  
   </body> 
-</html>     
+</html>   
